@@ -1,1 +1,2 @@
-Hello world 
+Intenta hacer una pequeña interfaz de login y crea la estructura de la aplicación.
+Dale diseño y un poco de formato, la estructura ya está, falta la página del login y yo lo conecto, al menos empieza con una parte para que Uri y yo lo terminemos y le demos el formato correspondiente
