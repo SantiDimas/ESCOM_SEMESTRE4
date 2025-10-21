@@ -8,11 +8,9 @@ app.use(express.static('public'));
 app.get("/Accion",(request,response)=>
 {
   const q = url.parse(request.url, true).query;
-  // Enable CORS for testing from other origins
   response.setHeader('Access-Control-Allow-Origin','*');
   response.setHeader('Cache-Control','no-cache');
 
-  // Simple JSON response echoing query parameters
   const result = {
     success: true,
     received: q
