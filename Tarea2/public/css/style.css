@@ -2,18 +2,30 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-footer p {
-    font-size: 14px;
-    line-height: 0.2;
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+main {
+    flex: 1 1 60%;
 }
 
 aside {
-  width: 30%;
-  padding-left: 15px;
-  margin-left: 15px;
-  float: right;
-  font-style: italic;
-  background-color: lightgray;
+    flex: 0 0 30%;
+    padding-left: 15px;
+    margin-left: 0;
+    font-style: italic;
+    background-color: lightgray;
 }
 
 a:hover{
