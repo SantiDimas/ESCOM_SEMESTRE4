@@ -1,45 +1,38 @@
 <!DOCTYPE html>
-<!--Este codigo muestra una pequeña pagina de articulo-->
-Idea Desechada
 <html>
     <head>
-        <title>Tarea no. 2</title>
-        <link rel="stylesheet" href="css/style.css">
+        <title>Login</title>
+        <link rel="stylesheet" href="css/loginStyle.css">
     </head>
     <body>
-        <header>
-            <h1>Un pequeño articulo :)</h1>
-        </header>
+        <p>datos personales</p>
+        <form id="registro" action="login.html">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+            </div>
 
-        <div>
-            <main>
-                <article>
-                    <p>3</p>
-                    
-                    <section>
-                        <p>esta es una seccion</p>
-                    </section>
-                </article>
-            </main>
-        </div>
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" placeholder="Ingresa tu edad">
+            </div>
 
-        <aside>
-            <h3>Mas articulos</h3>
-            <ul>
-                <li>
-                    <a href = "https://www.costco.com/">Costco</a>
-                </li>
-                <li>
-                    <a href = "https://www.amazon.com.mx/">Amazon</a>
-                </li>
-            </ul>
-        </aside>
+            <div class="form-group">
+            <label for="gustos_id">¿Qué te gusta hacer?</label>
+                <textarea id="gustos_id" name="gustos" rows="4" class="input-field" placeholder="Escribe lo que te gusta hacer"></textarea> <!-- Área de texto para respuestas abiertas -->
+            </div>
 
-        <footer>
-            <p>3BM1</p>
-            <p>Dimas Gonzalez Santiago</p>
-            <p>Cris</p>
-            <p>Miranda Ferrero Uriel</p>
-        </footer>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+
+            <input type="submit">
+        </form>
     </body>
 </html>
