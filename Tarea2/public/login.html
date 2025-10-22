@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--Este codigo muestra una pequeña pagina de articulo-->
 <html>
     <head>
         <title>Tarea no. 2</title>
@@ -15,9 +14,9 @@
             <main>
                 <article>
                     <section>
-                        <p><strong>Edad:</strong> <span id="edad-span"></span></p>
-                        <p><strong>Email:</strong> <span id="email-span"></span></p>
-                        <p><strong>Teléfono:</strong> <span id="telefono-span"></span></p>
+                        <p><strong>Edad:</strong> <span id="age"></span></p>
+                        <p><strong>Email:</strong> <span id="mail"></span></p>
+                        <p><strong>Teléfono:</strong> <span id="phone"></span></p>
                     </section>
 
                     <section>
@@ -57,9 +56,9 @@
                     if (el) el.textContent = text;
                 };
 
-                setText('edad-span', edad);
-                setText('email-span', email);
-                setText('telefono-span', telefono);
+                setText('age', edad);
+                setText('mail', email);
+                setText('phone', telefono);
                 setText('gustos-p', gustos);
             })();
         </script>
