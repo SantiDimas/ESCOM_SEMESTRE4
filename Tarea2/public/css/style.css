@@ -27,6 +27,7 @@ aside {
     margin-left: 0;
     font-style: italic;
     background-color: lightgray;
+    border-radius: 5px;
 }
 
 a:hover{

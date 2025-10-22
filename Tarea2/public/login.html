@@ -38,10 +38,30 @@
         </div>
 
         <footer>
-            <p>3BM1</p>
+            <p>4 BM1</p>
             <p>Dimas Gonzalez Santiago</p>
-            <p>Cris</p>
+            <p>Cristian Mendieta Mondragon</p>
             <p>Miranda Ferrero Uriel</p>
         </footer>
+        
+        <script>
+            (function(){
+                const parametros = new URLSearchParams(window.location.search);
+                const edad = parametros.get('edad') || '';
+                const email = parametros.get('email') || '';
+                const telefono = parametros.get('telefono') || '';
+                const gustos = parametros.get('gustos') || '';
+
+                const setText = (id, text) => {
+                    const el = document.getElementById(id);
+                    if (el) el.textContent = text;
+                };
+
+                setText('edad-span', edad);
+                setText('email-span', email);
+                setText('telefono-span', telefono);
+                setText('gustos-p', gustos);
+            })();
+        </script>
     </body>
 </html>
